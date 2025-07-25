@@ -1,3 +1,5 @@
+do simple pyramid, flipped simple pyramid, triangle, half diamond pattern, diamond pattern, hourglass, 12345 in a pyramid pattern
+
 # 🔁 Experiment 6 – C++ Decision Making Statements with Loops
 
 ## 🎯 Aim
