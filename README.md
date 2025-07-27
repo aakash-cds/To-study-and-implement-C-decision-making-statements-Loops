@@ -1,100 +1,144 @@
-do simple pyramid, flipped simple pyramid, triangle, half diamond pattern, diamond pattern, hourglass, 12345 in a pyramid pattern
-
 # 🔁 Experiment 6 – C++ Decision Making Statements with Loops
 
-## 🎯 Aim
-To study and implement **looping constructs** in C++ using:
-- `for` loop
-- `while` loop
-- `do-while` loop
+## 🎯 Aim:
+To study and implement decision-making statements along with different types of loops in C++, and solve problems such as pattern generation using nested loops.
 
 ---
 
-## 📘 Theory
+## 📚 Theory:
 
-Loops are used in programming to execute a block of code **repeatedly** until a specified condition is met. These are essential for tasks involving repetition, such as printing sequences, calculating sums, or iterating over data.
+Decision-making and looping are fundamental building blocks in C++. They allow programs to make choices and repeat actions, making them dynamic and interactive.
+
+### ✅ Decision-Making Statements:
+- `if`, `else`, `else if`: Used to control the flow based on conditions.
+
+### 🔁 Looping Constructs:
+- `for` loop: Executes a block of code a fixed number of times.
+- `while` loop: Repeats a block as long as the condition is true.
+- `do-while` loop: Similar to `while`, but guarantees at least one execution.
+
+### ✨ Nested Loops:
+Used when looping inside another loop; essential for 2D problems like patterns.
 
 ---
 
-### 🔹 1. `for` Loop
-Used when the number of iterations is known.
+## 🧪 Procedure:
+1. Start with `#include <iostream>` and `using namespace std;`
+2. Declare required variables.
+3. Use `for`, `while`, or `do-while` loops as per pattern logic.
+4. Use conditional statements when required to control flow.
+5. Compile and run the program.
+6. Observe the output and verify correctness.
 
-**Syntax:**
+---
+
+## 🧩 Patterns Implemented:
+
+### 🔺 1. Simple Pyramid
+```
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+```
+
+### 🔻 2. Flipped (Inverted) Simple Pyramid
+```
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+```
+
+### 🔼 3. Triangle Pattern
+```
+*
+**
+***
+****
+*****
+```
+
+### ⬅️➡️ 4. Half Diamond Pattern
+```
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+```
+
+### 💎 5. Diamond Pattern
+```
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+```
+
+### ⌛ 6. Hourglass Pattern
+```
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+```
+
+### 🔢 7. 12345 in Pyramid Pattern
+```
+    1
+   123
+  12345
+ 1234567
+123456789
+```
+
+---
+
+## 🧠 Key Concepts Covered:
+- Conditional logic using `if`, `else if`, `else`
+- Nested `for` loops for row and column traversal
+- Controlling spacing and symmetry in patterns
+- Combining decision-making with loop constructs
+
+---
+
+## 📈 Learning Outcomes:
+- Gained hands-on experience with `for`, `while`, and `do-while` loops.
+- Learned to apply conditionals for controlling logic flow.
+- Understood how to use nested loops for creating pattern-based outputs.
+- Strengthened skills in logic building and syntax fluency.
+
+---
+
+## ✅ Sample Template
 ```cpp
-for (initialization; condition; update) {
-    // code to execute repeatedly
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5; // height of pattern
+    // add loop logic here
+    return 0;
 }
 ```
 
-✔️ All loop parameters are declared in one line.
-
 ---
 
-### 🔹 2. `while` Loop
-Used when the number of iterations is not known in advance. It checks the condition **before** each iteration.
-
-**Syntax:**
-```cpp
-while (condition) {
-    // code to execute while condition is true
-}
-```
-
----
-
-### 🔹 3. `do-while` Loop
-Similar to the `while` loop but checks the condition **after** executing the loop body at least once.
-
-**Syntax:**
-```cpp
-do {
-    // code to execute
-} while (condition);
-```
-
----
-
-## ⚙️ Procedure
-
-1. Start your C++ program using `#include <iostream>` and `using namespace std;`.
-2. Use variables and input mechanisms (like `cin`) to collect necessary values.
-3. Implement:
-   - `for` loop: for counting, summation, or printing a series.
-   - `while` loop: when loop condition depends on user input or state.
-   - `do-while` loop: for menu-driven or user-repeating inputs.
-4. Compile and run the program to observe loop execution.
-5. Modify loop conditions or counters to experiment with iterations.
-
----
-
-## 🧪 Example Use-Cases
-
-- Print numbers from 1 to 10 (`for` loop)
-- Sum of digits of a number (`while` loop)
-- Repeat a menu until user exits (`do-while` loop)
-
----
-
-## 📌 Key Concepts Covered
-
-- Loop entry vs exit condition checks
-- Controlled repetition using counter variables
-- Importance of increment/decrement operations
-- Common logical errors: infinite loops, off-by-one errors
-
----
-
-## 🎓 Learning Outcomes
-
-- Learned the difference between `for`, `while`, and `do-while` loops
-- Understood when to use each loop construct based on the situation
-- Gained hands-on experience writing repetition logic in C++
-- Developed the ability to detect and prevent common looping mistakes
-
----
-
-## 📝 Experiment Summary
-
-This experiment introduced **looping constructs** in C++. Loops are fundamental to writing efficient programs that require repetition, such as calculations, input handling, and iterative problem solving. Mastery of loops enhances both logical thinking and coding efficiency.
-
----
+> 🚀 *“Loops give us power. Patterns teach us logic.”*
